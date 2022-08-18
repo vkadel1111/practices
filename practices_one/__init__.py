@@ -82,8 +82,18 @@ def leet_1523(low, high):
     s = my_set[my_set % 2 != 0]
     result = int((high - low + low % 2 + high % 2) / 2)
 
+def leet_1672():
+    accounts = [[1,2,3,2],[3,6,1]]
+    list_=min(accounts,key=my_funtion)
+    print("done")
+
+def my_funtion(iter):
+    return sum(iter)/len(iter)
+
+
 if __name__ == '__main__':
     print("starting")
+    leet_1672()
     number=leet_problem_1524([1,9,4,6,7,3,5])
     number=leet_problem_1524([2,4,6,10,3,8,6,4,3,1])
     number=leet_problem_1524([1, 2, 3, 4, 5, 6, 7])
